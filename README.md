@@ -1,6 +1,6 @@
-## Design Patterns
+# Design Patterns
 
-# Contains: 
+## Contains: 
 
-Facade
-Decorator
+##### Facade
+##### Decorator
