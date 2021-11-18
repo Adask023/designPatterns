@@ -1,3 +1,5 @@
+// decorator example
+
 var User = function (name) {
   this.name = name;
 

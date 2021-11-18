@@ -4,3 +4,4 @@
 
 ##### Facade
 ##### Decorator
+##### Observer
