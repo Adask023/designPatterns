@@ -7,9 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Design Patterns</title>
 
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
   <!-- <script src="./patterns/facade.js" ></script> -->
   <!-- <script src="./patterns/observer.js"></script> -->
+  <!-- <script src="./patterns/builder/builder.js"></script> -->
+  {% comment %} <script src="./patterns/builder/builderJS.js"></script> {% endcomment %}
+  <script src="./patterns/builder/builderFamily.js"></script>
 
   <style>
     * {
@@ -44,37 +47,40 @@
       <li>Facade</li>
       <li>Decorator</li>
       <li>Observer</li>
+      <li>Builder</li>
     </ul>
   </header>
   <hr>
 
-  <section>
-    <div class="square" id="elementObserver1"></div>
-    <hr>
-    <button type="button" onClick="model.increment()">Increment</button>
-  </section>
+  <!-- <div class="observer_example">
+    <section>
+      <div class="square" id="elementObserver1"></div>
+      <hr>
+      <button type="button" onClick="model.increment()">Increment</button>
+    </section>
 
-  <script src="./patterns/observer/NumberModel.js"></script>
+    <script src="./patterns/observer/NumberModel.js"></script>
 
-  <script src="./patterns/observer/ElementObserver.js"></script>
-  <script src="./patterns/observer/ConsoleObserver.js"></script>
-  <script src="./patterns/observer/HistoryObserver.js"></script>
-  <script src="./patterns/observer/CheckObserver.js"></script>
+    <script src="./patterns/observer/ElementObserver.js"></script>
+    <script src="./patterns/observer/ConsoleObserver.js"></script>
+    <script src="./patterns/observer/HistoryObserver.js"></script>
+    <script src="./patterns/observer/CheckObserver.js"></script>
 
-  <script type="text/javascript">
-    const model = new NumberModel();
-    const eObs1 = new ElementObserver('elementObserver1');
-    const consoleObserver = new ConsoleObserver();
-    const historyObserver = new HistoryObserver();
-    const checkObserver = new CheckObserver();
+    <script type="text/javascript">
+      const model = new NumberModel();
+      const eObs1 = new ElementObserver('elementObserver1');
+      const consoleObserver = new ConsoleObserver();
+      const historyObserver = new HistoryObserver();
+      const checkObserver = new CheckObserver();
 
-    model.addObserver(eObs1);
-    model.addObserver(consoleObserver);
-    model.addObserver(historyObserver);
-    model.addObserver(checkObserver);
+      model.addObserver(eObs1);
+      model.addObserver(consoleObserver);
+      model.addObserver(historyObserver);
+      model.addObserver(checkObserver);
 
-    // model.notifyObservers();
-  </script>
+      // model.notifyObservers();
+    </script>
+  </div> -->
 </body>
 
 </html>
